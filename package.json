@@ -22,6 +22,7 @@
   "dependencies": {
     "canvas": "^2.8.0",
     "echarts": "^5.1.1",
+    "express": "^4.17.1",
     "jsdom": "^16.6.0",
     "typescript": "^4.3.2"
   },
