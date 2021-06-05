@@ -3,7 +3,7 @@ import * as echarts from 'echarts';
 import * as jsdom from 'jsdom'
 
 const app = express()
-const port = 5000
+const port = 443
 app.get('/', (_, res) => {
 
     const dom = new jsdom.JSDOM(`<div id="content"></div>`, {
@@ -18,7 +18,7 @@ app.get('/', (_, res) => {
     global.document = dom.window.document;
 
     let myDiv = dom.window.document.createElement('div');
-    myDiv.style.width = "500px"
+    myDiv.style.width = "1000px"
     myDiv.style.height = "500px"
 
     var myChart = echarts.init(myDiv);
